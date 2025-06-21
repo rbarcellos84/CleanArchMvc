@@ -26,7 +26,8 @@ A estrutura do projeto segue rigorosamente os princípios da Clean Architecture,
 
 Este diagrama ilustra as quatro camadas principais do projeto e como as dependências fluem de fora para dentro, garantindo que o domínio de negócio seja o núcleo e independente de detalhes de infraestrutura ou interface.
 
-Detalhamento das Camadas
+Detalhamento das Camadas:
+
 1. CleanArchMvc.Domain (A Camada Mais Interna - O Coração do Negócio)
 Propósito: Contém as regras de negócio essenciais, entidades do domínio, objetos de valor, agregados, e interfaces de repositório. Esta camada é completamente independente de qualquer framework ou tecnologia externa.
 Implementação:
@@ -35,6 +36,7 @@ Interfaces de Repositório: Definições contratuais de como os dados do domíni
 Eventos de Domínio (Opcional): Representam algo significativo que aconteceu no domínio.
 Exceções de Domínio: Exceções específicas que representam violações de regras de negócio.
 Vantagens: Garante que a lógica de negócio seja reusável e possa ser utilizada em diferentes tipos de aplicações (web, desktop, mobile, etc.) sem modificações. É a parte mais estável do sistema.
+
 2. CleanArchMvc.Application (A Camada de Orquestração)
 Propósito: Orquestra a lógica de negócio para casos de uso específicos da aplicação. Contém DTOs (Data Transfer Objects), interfaces de serviços de aplicação e, se aplicável, handlers de comandos/queries (CQRS).
 Implementação:
@@ -42,6 +44,7 @@ Serviços de Aplicação/Handlers: Classes que recebem requisições de usuário
 DTOs: Objetos simples que transferem dados entre as camadas da aplicação, desacoplando o modelo de domínio do modelo de apresentação.
 Interfaces de Serviços Externos: Se a aplicação precisar interagir com serviços externos, suas interfaces podem ser definidas aqui e implementadas na camada de infraestrutura.
 Vantagens: Encapsula os casos de uso da aplicação, mantendo a camada de Domínio focada apenas nas regras de negócio e a camada de Apresentação limpa de lógica complexa.
+
 3. CleanArchMvc.Infra.Data (A Camada de Infraestrutura de Dados)
 Propósito: Responsável pelos detalhes de persistência de dados. Contém as implementações concretas das interfaces de repositório definidas na camada de Domínio.
 Implementação:
@@ -50,10 +53,12 @@ Configurações de Entidades: Mapeamento das entidades de domínio para o esquem
 Migrações: Gerenciamento do esquema do banco de dados através do EF Core Migrations.
 Implementações de Repositório: Classes que implementam as interfaces de repositório definidas no Domínio, usando o DbContext para realizar operações de CRUD.
 Vantagens: Isola a lógica de acesso a dados do resto da aplicação, permitindo que o tipo de banco de dados (SQL Server, PostgreSQL, MySQL) e a tecnologia de acesso a dados (EF Core, Dapper) sejam alterados sem afetar as camadas superiores.
+
 4. CleanArchMvc.Infra.IoC (Configuração de Injeção de Dependência)
 Propósito: Este projeto contém as configurações de Injeção de Dependência para registrar todas as interfaces e suas implementações concretas, bem como os serviços do Entity Framework Core. Embora não seja uma camada de "arquitetura" no sentido puro, é um ponto central para configurar o container de DI.
 Implementação: Métodos de extensão para IServiceCollection que configuram o Entity Framework Core e mapeiam interfaces para suas implementações concretas.
 Vantagens: Centraliza a configuração de dependências, tornando o processo de inicialização da aplicação claro e permitindo que as camadas dependam de abstrações, não de implementações concretas.
+
 5. CleanArchMvc.WebUI (A Camada de Apresentação)
 Propósito: É a porta de entrada da aplicação, responsável por receber as requisições do usuário e apresentar os resultados. É a camada mais externa e depende de todas as outras.
 Implementação:
@@ -63,12 +68,14 @@ Controladores ASP.NET Core Web API: Endpoints RESTful que expõem os casos de us
 Middleware de Autenticação/Autorização: Configuração do JWT para proteger os endpoints da API.
 Mapeamentos (Ex: AutoMapper): Mapeamento de DTOs para entidades de domínio e vice-versa, quando necessário, para desacoplar as camadas.
 Vantagens: O ideal é que esta camada seja "burra", contendo o mínimo de lógica possível, focando apenas na apresentação e na delegação de responsabilidades. Isso a torna facilmente substituível (e.g., de MVC para uma API pura + SPA).
+
 🔒 Segurança com JWT
 Para garantir a segurança dos endpoints da API, este projeto implementa autenticação e autorização via JSON Web Tokens (JWT).
 
 Autenticação: Usuários enviam credenciais (username/password) para um endpoint de login. Após validação, um JWT é gerado e retornado ao cliente.
 Autorização: Em requisições subsequentes para endpoints protegidos, o cliente envia o JWT no cabeçalho Authorization (formato Bearer token). O servidor valida o token (assinatura, expiração) e extrai as informações do usuário e suas permissões para autorizar o acesso ao recurso.
 Configuração no ASP.NET Core: Utiliza os pacotes Microsoft.AspNetCore.Authentication.JwtBearer para configurar e processar os tokens JWT de forma eficiente.
+
 🛠️ Como Executar o Projeto
 Siga estes passos para configurar e executar o projeto em sua máquina local:
 
@@ -121,11 +128,13 @@ CRUD Básico de Entidades: Exemplo de como realizar operações de criação, le
 Autenticação e Autorização: Implementação de JWT para proteger as rotas da API.
 Exemplo de API RESTful: Demonstração de endpoints para consumo por aplicações cliente.
 (Adicione aqui outras funcionalidades específicas do seu projeto, se houver.)
+
 🤝 Contribuições
 Contribuições são muito bem-vindas! Se você tiver sugestões, encontrar bugs ou quiser adicionar novas funcionalidades, sinta-se à vontade para:
 
 Abrir uma Issue descrevendo o problema ou a sugestão.
 Criar um Pull Request com suas alterações.
+
 📄 Licença
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
@@ -134,10 +143,4 @@ Se você tiver alguma dúvida sobre o projeto ou a implementação da Clean Arch
 
 Seu Nome/GitHub: rbarcellos84
 Email (Opcional): rbarcellos84@gmail.com
-Pontos importantes a verificar e adaptar:
 
-Substitua Nome do Projeto: Clean Architecture ASP.NET Core MVC pelo nome real do seu projeto, se for diferente.
-![Banner do Projeto...] e ![Diagrama da Clean Architecture...]: Lembre-se de criar e hospedar essas imagens (dentro do seu repositório, por exemplo, em uma pasta images/) e atualizar os links.
-CQRS e MediatR: Se você não implementou CQRS ou MediatR, remova essa parte da seção "Tecnologias e Conceitos Desenvolvidos". Se sim, pode expandir um pouco mais.
-Funcionalidades: Detalhe mais as funcionalidades se o seu projeto já tiver casos de uso específicos implementados (além do CRUD básico).
-Pré-requisitos e Comandos: Verifique se os comandos dotnet ef estão corretos para a sua estrutura de projeto (especialmente --startup-project).
