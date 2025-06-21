@@ -1,8 +1,6 @@
 ﻿using CleanArchMvc.Domain.Account;
 using CleanArchMvc.WebUI.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
-using System.Threading.Tasks;
 
 namespace CleanArchMvc.WebUI.Controllers
 {

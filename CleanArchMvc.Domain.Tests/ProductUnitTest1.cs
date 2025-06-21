@@ -8,7 +8,7 @@ namespace CleanArchMvc.Domain.Tests
         [Fact(DisplayName = "Create Product With Valid State")]
         public void CreateProduct_WithValidParameters_ResultObjectValidState()
         {
-            Action action = () => new Product(1, "Product Name", "Product Description", 9.99m,99, "product image");
+            Action action = () => new Product(1, "Product Name", "Product Description", 9.99m, 99, "product image");
             action.Should()
                   .NotThrow<CleanArchMvc.Domain.Validation.DomainExceptionValidation>();
         }
@@ -16,7 +16,7 @@ namespace CleanArchMvc.Domain.Tests
         [Fact(DisplayName = "Create Product With Negative Id Value")]
         public void CreateProduct_NegativeIdValue_DomainExceptionInvalidId()
         {
-            Action action = () => new Product(-1, "Product Name", "Product Description", 9.99m,99, "product image");
+            Action action = () => new Product(-1, "Product Name", "Product Description", 9.99m, 99, "product image");
 
             action.Should().Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>()
                   .WithMessage("Invalid Id value.");

@@ -14,7 +14,7 @@ namespace CleanArchMvc.Application.Products.Handlers
             _productRepository = productRepository;
         }
 
-        public async Task<IEnumerable<Product>> Handle(GetProductsQuery request, 
+        public async Task<IEnumerable<Product>> Handle(GetProductsQuery request,
             CancellationToken cancellationToken)
         {
             return await _productRepository.GetProductsAsync();

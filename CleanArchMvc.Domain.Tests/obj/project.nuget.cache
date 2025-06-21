@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CnNTeeEQ18M=",
+  "dgSpecHash": "zHbJ2//gYsA=",
   "success": true,
-  "projectFilePath": "H:\\Macoratti\\CursoCleanArchitectureCHandler\\CleanArchMvc\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj",
+  "projectFilePath": "H:\\Macoratti\\CursoCleanArchitectureCHandlerApi\\CleanArchMvc\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rodrigo\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
@@ -91,9 +91,9 @@
       "code": "NU1603",
       "level": "Warning",
       "message": "System.Text.Encoding 4.3.0 depende de Microsoft.NETCore.Targets (>= 1.1.0) mas Microsoft.NETCore.Targets 1.1.0 não foi encontrado. Microsoft.NETCore.Targets 5.0.0 foi resolvido.",
-      "projectPath": "H:\\Macoratti\\CursoCleanArchitectureCHandler\\CleanArchMvc\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj",
+      "projectPath": "H:\\Macoratti\\CursoCleanArchitectureCHandlerApi\\CleanArchMvc\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj",
       "warningLevel": 1,
-      "filePath": "H:\\Macoratti\\CursoCleanArchitectureCHandler\\CleanArchMvc\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj",
+      "filePath": "H:\\Macoratti\\CursoCleanArchitectureCHandlerApi\\CleanArchMvc\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj",
       "libraryId": "Microsoft.NETCore.Targets",
       "targetGraphs": [
         "net8.0"
@@ -103,9 +103,9 @@
       "code": "NU1603",
       "level": "Warning",
       "message": "System.Text.Encoding 4.3.0 depende de System.Runtime (>= 4.3.0) mas System.Runtime 4.3.0 não foi encontrado. System.Runtime 4.3.1 foi resolvido.",
-      "projectPath": "H:\\Macoratti\\CursoCleanArchitectureCHandler\\CleanArchMvc\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj",
+      "projectPath": "H:\\Macoratti\\CursoCleanArchitectureCHandlerApi\\CleanArchMvc\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj",
       "warningLevel": 1,
-      "filePath": "H:\\Macoratti\\CursoCleanArchitectureCHandler\\CleanArchMvc\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj",
+      "filePath": "H:\\Macoratti\\CursoCleanArchitectureCHandlerApi\\CleanArchMvc\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj",
       "libraryId": "System.Runtime",
       "targetGraphs": [
         "net8.0"

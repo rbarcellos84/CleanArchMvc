@@ -6299,11 +6299,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Macoratti\\CursoCleanArchitectureCHandler\\CleanArchMvc\\CleanArchMvc.WebUI\\CleanArchMvc.WebUI.csproj",
+      "projectUniqueName": "H:\\Macoratti\\CursoCleanArchitectureCHandlerApi\\CleanArchMvc\\CleanArchMvc.WebUI\\CleanArchMvc.WebUI.csproj",
       "projectName": "CleanArchMvc.WebUI",
-      "projectPath": "H:\\Macoratti\\CursoCleanArchitectureCHandler\\CleanArchMvc\\CleanArchMvc.WebUI\\CleanArchMvc.WebUI.csproj",
+      "projectPath": "H:\\Macoratti\\CursoCleanArchitectureCHandlerApi\\CleanArchMvc\\CleanArchMvc.WebUI\\CleanArchMvc.WebUI.csproj",
       "packagesPath": "C:\\Users\\Rodrigo\\.nuget\\packages\\",
-      "outputPath": "H:\\Macoratti\\CursoCleanArchitectureCHandler\\CleanArchMvc\\CleanArchMvc.WebUI\\obj\\",
+      "outputPath": "H:\\Macoratti\\CursoCleanArchitectureCHandlerApi\\CleanArchMvc\\CleanArchMvc.WebUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\Programas\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -6327,8 +6327,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "H:\\Macoratti\\CursoCleanArchitectureCHandler\\CleanArchMvc\\CleanArchMvc.Infra.Ioc\\CleanArchMvc.Infra.Ioc.csproj": {
-              "projectPath": "H:\\Macoratti\\CursoCleanArchitectureCHandler\\CleanArchMvc\\CleanArchMvc.Infra.Ioc\\CleanArchMvc.Infra.Ioc.csproj"
+            "H:\\Macoratti\\CursoCleanArchitectureCHandlerApi\\CleanArchMvc\\CleanArchMvc.Infra.Ioc\\CleanArchMvc.Infra.Ioc.csproj": {
+              "projectPath": "H:\\Macoratti\\CursoCleanArchitectureCHandlerApi\\CleanArchMvc\\CleanArchMvc.Infra.Ioc\\CleanArchMvc.Infra.Ioc.csproj"
             }
           }
         }

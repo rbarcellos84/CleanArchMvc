@@ -4279,11 +4279,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Macoratti\\CursoCleanArchitectureCHandler\\CleanArchMvc\\CleanArchMvc.Infra.Ioc\\CleanArchMvc.Infra.Ioc.csproj",
+      "projectUniqueName": "H:\\Macoratti\\CursoCleanArchitectureCHandlerApi\\CleanArchMvc\\CleanArchMvc.Infra.Ioc\\CleanArchMvc.Infra.Ioc.csproj",
       "projectName": "CleanArchMvc.Infra.Ioc",
-      "projectPath": "H:\\Macoratti\\CursoCleanArchitectureCHandler\\CleanArchMvc\\CleanArchMvc.Infra.Ioc\\CleanArchMvc.Infra.Ioc.csproj",
+      "projectPath": "H:\\Macoratti\\CursoCleanArchitectureCHandlerApi\\CleanArchMvc\\CleanArchMvc.Infra.Ioc\\CleanArchMvc.Infra.Ioc.csproj",
       "packagesPath": "C:\\Users\\Rodrigo\\.nuget\\packages\\",
-      "outputPath": "H:\\Macoratti\\CursoCleanArchitectureCHandler\\CleanArchMvc\\CleanArchMvc.Infra.Ioc\\obj\\",
+      "outputPath": "H:\\Macoratti\\CursoCleanArchitectureCHandlerApi\\CleanArchMvc\\CleanArchMvc.Infra.Ioc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\Programas\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -4307,14 +4307,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "H:\\Macoratti\\CursoCleanArchitectureCHandler\\CleanArchMvc\\CleanArchMvc.Application\\CleanArchMvc.Application.csproj": {
-              "projectPath": "H:\\Macoratti\\CursoCleanArchitectureCHandler\\CleanArchMvc\\CleanArchMvc.Application\\CleanArchMvc.Application.csproj"
+            "H:\\Macoratti\\CursoCleanArchitectureCHandlerApi\\CleanArchMvc\\CleanArchMvc.Application\\CleanArchMvc.Application.csproj": {
+              "projectPath": "H:\\Macoratti\\CursoCleanArchitectureCHandlerApi\\CleanArchMvc\\CleanArchMvc.Application\\CleanArchMvc.Application.csproj"
             },
-            "H:\\Macoratti\\CursoCleanArchitectureCHandler\\CleanArchMvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj": {
-              "projectPath": "H:\\Macoratti\\CursoCleanArchitectureCHandler\\CleanArchMvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj"
+            "H:\\Macoratti\\CursoCleanArchitectureCHandlerApi\\CleanArchMvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj": {
+              "projectPath": "H:\\Macoratti\\CursoCleanArchitectureCHandlerApi\\CleanArchMvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj"
             },
-            "H:\\Macoratti\\CursoCleanArchitectureCHandler\\CleanArchMvc\\CleanArchMvc.Infra.Data\\CleanArchMvc.Infra.Data.csproj": {
-              "projectPath": "H:\\Macoratti\\CursoCleanArchitectureCHandler\\CleanArchMvc\\CleanArchMvc.Infra.Data\\CleanArchMvc.Infra.Data.csproj"
+            "H:\\Macoratti\\CursoCleanArchitectureCHandlerApi\\CleanArchMvc\\CleanArchMvc.Infra.Data\\CleanArchMvc.Infra.Data.csproj": {
+              "projectPath": "H:\\Macoratti\\CursoCleanArchitectureCHandlerApi\\CleanArchMvc\\CleanArchMvc.Infra.Data\\CleanArchMvc.Infra.Data.csproj"
             }
           }
         }

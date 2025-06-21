@@ -1,6 +1,5 @@
 using CleanArchMvc.Domain.Entities;
 using FluentAssertions;
-using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArchMvc.Domain.Tests
 {
@@ -40,7 +39,7 @@ namespace CleanArchMvc.Domain.Tests
                   .Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>()
                   .WithMessage("Invalid name. Name is required.");
         }
-        
+
         [Fact(DisplayName = "Create Category With name null")]
         public void CreateCategory_WithNullNameValue_DomainExceptionInvalidName()
         {
