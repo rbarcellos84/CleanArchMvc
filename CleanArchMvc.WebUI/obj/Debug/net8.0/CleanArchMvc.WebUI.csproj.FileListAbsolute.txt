@@ -1843,3 +1843,8 @@ H:\Macoratti\CursoCleanArchitectureCHandlerApi\CleanArchMvc\CleanArchMvc.WebUI\o
 H:\Macoratti\CursoCleanArchitectureCHandlerApi\CleanArchMvc\CleanArchMvc.WebUI\obj\Debug\net8.0\CleanArchMvc.WebUI.pdb
 H:\Macoratti\CursoCleanArchitectureCHandlerApi\CleanArchMvc\CleanArchMvc.WebUI\obj\Debug\net8.0\CleanArchMvc.WebUI.genruntimeconfig.cache
 H:\Macoratti\CursoCleanArchitectureCHandlerApi\CleanArchMvc\CleanArchMvc.WebUI\obj\Debug\net8.0\ref\CleanArchMvc.WebUI.dll
+H:\Macoratti\CursoCleanArchitectureCHandlerApi\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+H:\Macoratti\CursoCleanArchitectureCHandlerApi\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net8.0\Microsoft.OpenApi.dll
+H:\Macoratti\CursoCleanArchitectureCHandlerApi\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+H:\Macoratti\CursoCleanArchitectureCHandlerApi\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+H:\Macoratti\CursoCleanArchitectureCHandlerApi\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll

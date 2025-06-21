@@ -121,7 +121,9 @@
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[CleanArchMvc.Application.DTOs.ProductDTO, CleanArchMvc.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
-          "application/json"
+          "text/plain",
+          "application/json",
+          "text/json"
         ],
         "StatusCode": 200
       }
@@ -161,7 +163,9 @@
       {
         "Type": "CleanArchMvc.Application.DTOs.ProductDTO",
         "MediaTypes": [
-          "application/json"
+          "text/plain",
+          "application/json",
+          "text/json"
         ],
         "StatusCode": 200
       }
@@ -207,7 +211,51 @@
       {
         "Type": "CleanArchMvc.Application.DTOs.ProductDTO",
         "MediaTypes": [
-          "application/json"
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CleanArchMvc.WebApi.Controllers.TokenController",
+    "Method": "CreateUser",
+    "RelativePath": "api/Token/CreateUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userInfo",
+        "Type": "CleanArchMvc.WebApi.DTOs.LoginModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CleanArchMvc.WebApi.Controllers.TokenController",
+    "Method": "Login",
+    "RelativePath": "api/Token/LoginUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userInfo",
+        "Type": "CleanArchMvc.WebApi.DTOs.LoginModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CleanArchMvc.WebApi.DTOs.UserToken",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
         ],
         "StatusCode": 200
       }

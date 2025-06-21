@@ -16,22 +16,22 @@ namespace CleanArchMvc.Infra.Ioc
 {
     public static class DependencyInjectiopnAPI
     {
-        public static IServiceCollection AddInfrastructureApi(this IServiceCollection services,
-            IConfiguration configuration)
+        public static IServiceCollection AddInfrastructureApi(this IServiceCollection services,IConfiguration configuration)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-             options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"
-            ), b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
+                                                        options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"
+                                                       ), b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
-                .AddDefaultTokenProviders();
+                    .AddEntityFrameworkStores<ApplicationDbContext>()
+                    .AddDefaultTokenProviders();
 
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<ICategoryService, CategoryService>();
 
+            // Adiciona o serviço de autenticação
             services.AddScoped<IAuthenticate, AuthenticateService>();
 
             services.AddAutoMapper(typeof(DomainToDTOMappingProfile));

@@ -117,3 +117,8 @@ H:\Macoratti\CursoCleanArchitectureCHandlerApi\CleanArchMvc\CleanArchMvc.WebApi\
 H:\Macoratti\CursoCleanArchitectureCHandlerApi\CleanArchMvc\CleanArchMvc.WebApi\bin\Debug\net8.0\CleanArchMvc.Application.pdb
 H:\Macoratti\CursoCleanArchitectureCHandlerApi\CleanArchMvc\CleanArchMvc.WebApi\bin\Debug\net8.0\CleanArchMvc.Domain.pdb
 H:\Macoratti\CursoCleanArchitectureCHandlerApi\CleanArchMvc\CleanArchMvc.WebApi\bin\Debug\net8.0\CleanArchMvc.Infra.Data.pdb
+H:\Macoratti\CursoCleanArchitectureCHandlerApi\CleanArchMvc\CleanArchMvc.WebApi\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+H:\Macoratti\CursoCleanArchitectureCHandlerApi\CleanArchMvc\CleanArchMvc.WebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+H:\Macoratti\CursoCleanArchitectureCHandlerApi\CleanArchMvc\CleanArchMvc.WebApi\bin\Debug\net8.0\Newtonsoft.Json.dll
+H:\Macoratti\CursoCleanArchitectureCHandlerApi\CleanArchMvc\CleanArchMvc.WebApi\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+H:\Macoratti\CursoCleanArchitectureCHandlerApi\CleanArchMvc\CleanArchMvc.WebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

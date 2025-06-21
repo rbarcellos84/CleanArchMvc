@@ -1,12 +1,17 @@
 ﻿using CleanArchMvc.Application.DTOs;
 using CleanArchMvc.Application.Interfaces;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArchMvc.API.Controllers
 {
+    // Para o conhecimento, dessa forma deixamos bem especifico a autenticação JWT para esse controller,
+    // [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+
     [Route("api/[controller]")]
     [ApiController]
-    [Produces("application/json")]
+    [Authorize]
     public class ProductsController : ControllerBase
     {
         //injeção de dependência do serviço de produto

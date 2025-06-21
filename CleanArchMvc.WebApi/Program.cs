@@ -1,4 +1,5 @@
 using CleanArchMvc.Infra.Ioc;
+using CleanArchMvc.WebApi.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,14 +16,25 @@ builder.Services.AddCors(options =>
     });
 });
 
-// Add services to the container.
+builder.Services.AddControllers()
+                .AddNewtonsoftJson(x =>
+                {
+                    // Resolvendo problema de referência circular com o Newtonsoft.Json
+                    x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+                    // Removendo o endereço de categoria quando for nulo (campo utilizado para url de pagina ASP NET)
+                    x.SerializerSettings.ContractResolver = new IgnoreCategoryWhenNullResolver();
+                });
 
-builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+
+// Adiciona a configuração do Swagger com JWT
+builder.Services.AddInfrastructureSwagger();
 
 // Adiciona a configuração de injeção de dependência
 builder.Services.AddInfrastructureApi(builder.Configuration);
+
+// Adiciona a configuração de autenticação JWT
+builder.Services.AddInfrastructureJWT(builder.Configuration);
 
 var app = builder.Build();
 
@@ -30,15 +42,31 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "CleanArchMvc.API v1");
+    });
 }
 
+// Adiciona o middleware de tratamento de erros
 app.UseHttpsRedirection();
 
 // Ative a política de CORS
 app.UseCors("AllowSpecificOrigins");
 
+// Adiciona o middleware de tratamento de erros para códigos de status HTTP
+app.UseStatusCodePages();
+
+// Adiciona o middleware de roteamento
+app.UseRouting();
+
+// Adiciona o middleware de autenticação JWT antes do middleware de autorização
+app.UseAuthentication();
+
+// Adiciona o middleware de autorização
 app.UseAuthorization();
-app.MapControllers();
+
+// Mapear os controladores para as rotas definidas
+app.MapControllers(); 
 
 app.Run();
