@@ -1,4 +1,5 @@
 Clean Architecture com ASP.NET Core: Um Guia Prático
+
 🚀 Visão Geral do Projeto
 Este projeto é uma demonstração abrangente de como implementar uma aplicação robusta utilizando ASP.NET Core e seguindo os princípios da Clean Architecture. O principal objetivo é fornecer um modelo prático e detalhado para construir sistemas que sejam modulares, escaláveis, testáveis e fáceis de manter, garantindo que a lógica de negócio principal seja independente de frameworks, bancos de dados ou interfaces de usuário.
 
@@ -21,6 +22,7 @@ JSON Web Tokens (JWT): Implementado para segurança da API, proporcionando um me
 Domain-Driven Design (DDD): Foco na modelagem de um domínio rico, com entidades, objetos de valor e agregados que representam o negócio de forma precisa e encapsulam suas regras.
 Padrões de Projeto: Aplicação de padrões como Repositório e Unit of Work para abstrair o acesso a dados e gerenciar transações, além de Services/Handlers para a lógica da camada de aplicação.
 CQRS (Command Query Responsibility Segregation) - (Mencione se você implementou): Separação das operações de leitura (Queries) e escrita (Commands) para otimizar desempenho e escalabilidade. MediatR é comumente usado aqui para orquestração.
+
 📐 A Arquitetura do Projeto em Detalhes
 A estrutura do projeto segue rigorosamente os princípios da Clean Architecture, organizada em camadas que garantem o baixo acoplamento e a alta coesão.
 
