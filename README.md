@@ -141,6 +141,6 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para ma
 ✉️ Contato
 Se você tiver alguma dúvida sobre o projeto ou a implementação da Clean Architecture, sinta-se à vontade para entrar em contato:
 
-Seu Nome/GitHub: rbarcellos84
-Email (Opcional): rbarcellos84@gmail.com
+Rodrigo Barcellos - GitHub: rbarcellos84
+Portfolio: https://rbarcellos84.github.io/Rocketseat-Portfolio/
 
